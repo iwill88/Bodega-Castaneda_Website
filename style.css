@@ -979,12 +979,18 @@
     }
 
     .navegador-principal__lista li{
-        margin:3px;
+        margin:5px;
     
     }
     .navegador-principal__lista li a{
        font-size: 15px;
     
+    }
+
+    .primera-seccion h1{
+        font-size: 40px;
+        position:relative;
+        right:5px;
     }
 
     .contenedor-ofertas{
@@ -1001,6 +1007,12 @@
     .contenedor-productos{
         flex-direction:column;
         align-items:center;
+    }
+
+    .footer__logo img{
+        width: auto;
+        height: 100px;
+        
     }
     
     .titulo-nav h2{
@@ -1044,7 +1056,28 @@
         padding:5px 0px;
     }
 
+
+    /*------------------NOSOTROS---------------*/
+
+    .primera-seccion--nosotros h1{
+        font-size: 40px;
+        position:relative;
+        right:5px;
+    }
+
+    /*------------------TIENDA---------------*/
+
+    .primera-seccion--tienda h1{
+        font-size: 50px;
+
+    }
+
+
     /*------------------TURISMO---------------*/
+
+    .primera-seccion--turismo h1{
+        font-size: 50px;
+    }
 
     .contenedor-servicios{
         flex-direction: column;
