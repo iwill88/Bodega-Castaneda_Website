@@ -1232,6 +1232,11 @@
 
     /*---------------CONTACTO--------------*/
 
+    .redes-sociales img{
+        width:5px;
+        height:5px;
+    }
+
     .formulario{
         flex-direction: column;
         margin-top:40px;
