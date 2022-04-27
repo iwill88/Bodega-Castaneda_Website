@@ -291,9 +291,12 @@
         "logo titulo-nav titulo-vinos"
         "logo nav vinos"
         "copyright copyright copyright";
+
 }
 .footer__logo{
     grid-area:logo;
+    align-self:center;
+
 }
 .footer__logo img{
     width: auto;
@@ -774,7 +777,7 @@
 .primera-seccion--carrito h1{
     color:white;
     font-family: 'Esteban', serif;
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
     padding:20px;
 
@@ -990,7 +993,7 @@
     .primera-seccion h1{
         font-size: 40px;
         position:relative;
-        right:5px;
+        right:15px;
     }
 
     .contenedor-ofertas{
@@ -1009,6 +1012,10 @@
         align-items:center;
     }
 
+    .enlaces-footer{
+        height:250px;
+    }
+
     .footer__logo img{
         width: auto;
         height: 100px;
@@ -1018,7 +1025,7 @@
     .titulo-nav h2{
         font-size: 25px;
         position:relative;
-        bottom:15px;
+        bottom:23px;
         left:35px;
     }
     
@@ -1026,18 +1033,21 @@
         flex-direction:column;
         font-size:12px;
         left:20px;
+        position:relative;
+        bottom:8px;
 
     }
 
     .titulo-vinos h2{
         font-size: 25px;
         position:relative;
-        bottom:15px;
+        bottom:23px;
     }
     .vinos-footer__lista{
         flex-direction:column;
         font-size:12px;
-
+        position:relative;
+        bottom:8px;
     
     
     }
@@ -1062,9 +1072,14 @@
     .primera-seccion--nosotros h1{
         font-size: 40px;
         position:relative;
-        right:5px;
+        right:15px;
     }
 
+    .contenedor-historia p{
+
+        font-size: 15px;
+
+    }
     /*------------------TIENDA---------------*/
 
     .primera-seccion--tienda h1{
@@ -1077,6 +1092,14 @@
 
     .primera-seccion--turismo h1{
         font-size: 50px;
+    }
+
+    .seccion-servicios h2{
+        font-size: 40px;
+    }
+    
+    .seccion-servicios-parrafo{
+        font-size: 20px;
     }
 
     .contenedor-servicios{
