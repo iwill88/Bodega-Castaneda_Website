@@ -1056,6 +1056,10 @@
     }
     
     /*------------------CONTACTO---------------*/
+    .primera-seccion--contacto h1 {
+        font-size: 70px;
+    }
+      
 
     .redes-sociales img{
         width:60px;
@@ -1077,11 +1081,11 @@
      }
 
      .formulario-mensaje textarea{
-        width:400px;
+        width:350px;
     }
 
     .boton-enviar{
-        width:400px;
+        width:350px;
     }
 
      /*------------------CARRITO---------------*/
