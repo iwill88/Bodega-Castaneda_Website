@@ -1,0 +1,1322 @@
+@import url('https://fonts.googleapis.com/css2?family=Esteban&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+/*-------------------------INDEX---------------------------*/
+
+/*-----------------------CSS grid layout-------------------*/
+
+.grid-contenedor{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    grid-template-areas:
+                                                            /*------SE HA APLICADO GRID-TEMPLATE-AREA------------*/
+        "contenedor-encabezado"
+        "contenedor-main"
+        "contenedor-footer";
+}
+
+
+/*--------------------CSS de header------------------------*/
+
+
+.contenedor-encabezado{
+    grid-area: contenedor-encabezado;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+    top:0;
+    z-index: 1; /*Esto nos sirve para para que el header tenga prioridad sobre las demas capas*/
+   
+
+}
+
+/*-----CSS del navegador principal dentro del header------*/
+
+.navegador-principal {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+   
+}
+
+
+.navegador-principal__logo{
+    width: auto;
+    height: 150px;
+    
+}
+
+.navegador-principal__lista{
+   list-style: none;
+   display:flex;
+   width:auto;
+   
+
+    
+}
+
+.navegador-principal__lista li{
+    margin:15px;
+    
+
+}
+
+.navegador-principal__lista li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+    font-family: 'Esteban', serif;
+    
+    
+}
+
+.navegador-principal__lista li a:hover{
+    transition: 1s;
+    text-shadow: none;
+    color:rgb(51, 51, 155);
+    
+    
+}
+
+.fa-solid{
+    color:white;
+    font-size: 30px;
+}
+
+.navegador-principal__carrito i:hover{
+    transition: 0.5s;
+    text-shadow: none;
+    color:rgb(51, 51, 155);
+    transform:scale(1.20,1.20);
+    
+    
+}
+
+
+/*---------------CSS del main------------------*/
+
+
+.contenedor-main{
+    grid-area: contenedor-main;
+    background-color: black;
+}
+
+/*---------------CSS de la primera seccion------------------*/
+
+.primera-seccion{
+    background: linear-gradient(rgba(0, 0, 0, 0.295),rgba(0, 0, 0, 0.295)), url(Imagenes/Imagen_index4.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height:80vh;
+    width: 100%;
+    display:flex;
+    align-items:center;
+
+
+  
+   
+}
+
+
+.primera-seccion h1{
+    color:rgb(238, 236, 236);
+    font-size: 60px;
+    font-family: 'Esteban', serif;
+    text-align: right;
+    text-shadow: black 5px 2px;
+    
+    
+ 
+
+    
+    
+}
+
+/*-----------------CSS de la segunda seccion-----------------*/
+
+.segunda-seccion{
+    width:100%;
+    
+}
+
+.segunda-seccion h2{
+    color:white;
+    font-family: 'Esteban', serif;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contenedor-ofertas{
+    width:100%;
+    padding-bottom: 20px;
+    display:flex;
+    justify-content:space-around;
+}
+
+.ofertas-diseño{
+    height:300px;
+    width:390px;
+
+}
+
+
+.ofertas-diseño img {
+    height:260px;
+    width:390px;
+}
+
+.ofertas-diseño img:hover{
+    transition:1s;
+    transform:scale(1.02,1.02)
+}
+
+.ofertas-diseño p {
+    background-color: rgb(83, 14, 25);
+    height: 40px;
+    width: 390px;
+    font-size: 18px;
+    color:white;
+    text-align: center;
+}
+
+
+
+
+/*-----------------CSS de la tercera seccion-----------------*/
+
+.tercera-seccion {
+    width:100%;
+   
+}
+
+
+
+
+.tercera-seccion h2{
+    color:white;
+    font-family: 'Esteban', serif;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contenedor-productos{
+
+    padding-bottom: 20px;
+    display:flex;
+    justify-content:space-around;
+}
+
+.producto{
+    height:490px;
+    width:315px;
+    text-align: center;
+    background-color: white;
+    border-radius: 12px;
+    margin-bottom:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.producto__botella img{
+    padding-top:20px;
+    height:345px;
+    width:240px;
+}
+
+.producto__botella img:hover{
+    transition:1s;
+    transform:scale(1.05,1.05)
+}
+.producto__informacion h3{
+    font-style: italic;
+    font-size: 25px;
+    color:black;
+    font-weight: 500;
+    margin: 6px 6px;
+    border-top: 1px solid;
+}
+
+.boton{
+    background-color: black;
+    text-decoration: dashed;
+    color:white;
+    border-radius: 10px;
+    padding:7px;
+    border:2px;
+    margin:3px 110px;
+    /*Usamos em para tomar como referencia el tamaño actual del div padre*/
+    font-size: 1.5em;
+}
+
+.boton:hover{
+    transition: 1s;
+    text-shadow: none;
+    color:rgb(51, 51, 155);
+    
+    
+}
+/*-----------------------CSS del footer---------------------*/
+
+
+.contenedor-footer{
+    grid-area:contenedor-footer;
+    width: 100%;
+    background-color: black;
+    border-top: 1px solid white;
+ 
+}
+
+.enlaces-footer{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:80px 80x 30px;                   /*------SE HA APLICADO GRID-TEMPLATE-AREA------------*/
+    grid-template-areas:
+        "logo titulo-nav titulo-vinos"
+        "logo nav vinos"
+        "copyright copyright copyright";
+}
+.footer__logo{
+    grid-area:logo;
+}
+.footer__logo img{
+    width: auto;
+    height: 150px;
+    
+}
+
+
+.titulo-nav{
+    grid-area:titulo-nav;
+    color: white;
+    font-size: 20px;
+    font-family: 'Esteban', serif;
+    text-transform: uppercase;
+    position:relative;
+    top:35px;
+    
+}
+
+.navegador-footer__lista{
+    grid-area: nav;
+    display:flex;
+    position:relative;
+    right:15px;
+      
+}
+
+.navegador-footer__lista li{
+   list-style:none;
+   
+    
+}
+
+
+.navegador-footer__lista li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Esteban', serif;
+    margin-left: 15px;
+    
+}
+
+.navegador-footer__lista li a:hover{
+    transition: 1s;
+    text-shadow: none;
+    color:rgb(51, 51, 155);
+    
+    
+}
+
+
+.titulo-vinos{
+    grid-area:titulo-vinos;
+    color: white;
+    font-size: 20px;
+    font-family: 'Esteban', serif;
+    text-transform: uppercase;
+    position:relative;
+    top:35px;
+    
+    
+}
+
+.vinos-footer__lista {
+    grid-area:vinos;
+    display:flex;
+    position:relative;
+    right:15px;
+
+}
+.vinos-footer__lista li{
+    list-style: none;
+    
+    
+}
+
+.vinos-footer__lista li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Esteban', serif;
+    margin-left: 15px;
+    
+}
+
+.vinos-footer__lista li a:hover{
+    transition: 1s;
+    text-shadow: none;
+    color:rgb(51, 51, 155);
+    
+    
+}
+
+.copyright-footer{
+    grid-area:copyright;
+    width:100%;
+    color: white;
+    font-family: sans-serif;
+    border-top: 1px solid white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+.copyright-parrafo-dos{
+    text-transform: uppercase;
+}
+
+
+
+
+.boton-whatsapp img{
+    height:50px;
+    width:50px;
+    position: fixed; /*Position se usara solamente para fijar el boton de whatsapp en todas las paginas*/
+    bottom: 110px;
+    right:10px;
+}
+
+.boton-whatsapp img:hover{
+    transition: 1s;
+    height: 65px;
+    width:65px;
+    
+}
+
+/*-------------------------NOSOTROS---------------------------*/
+
+/*---------------CSS de la primera seccion------------------*/
+
+.primera-seccion--nosotros{
+    background: linear-gradient(rgba(0, 0, 0, 0.295),rgba(0, 0, 0, 0.295)), url(Imagenes/Imagen_nosotros1.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height:80vh;
+    width: 100%;
+    display:flex;
+    align-items:center;
+
+
+}
+
+
+
+.primera-seccion--nosotros h1{
+    color:rgb(238, 236, 236);
+    font-size: 60px;
+    font-family: 'Esteban', serif;
+    text-align: right;
+    text-shadow: black 5px 2px;
+
+    
+}
+
+
+
+/*---------------CSS de la segunda seccion------------------*/
+
+.contenedor-historia{
+    
+    margin-left:15px;
+    display:flex;
+    align-items:center;
+}
+
+
+.contenedor-historia img{
+    
+    width: 36%;
+    height:auto;
+    margin-bottom:20px;
+}
+
+.contenedor-historia img.izquierda{
+    margin-right: 2%;
+    
+}
+
+.contenedor-historia img.derecha{
+    margin-left: 2%;
+    margin-right:15px;
+    
+}
+
+.contenedor-historia img:hover{
+    transition:1s;
+    transform:scale(1.04,1.04)
+}
+
+.contenedor-historia p{
+    
+    color:white;
+    font-size: 20px;
+    font-family: 'Esteban', serif;
+    text-align: justify;
+    width:60%;
+    
+   
+
+}
+
+
+
+/*-------------------------TIENDA---------------------------*/
+
+/*---------------CSS de la primera seccion------------------*/
+
+.primera-seccion--tienda{
+    background: linear-gradient(rgba(0, 0, 0, 0.295),rgba(0, 0, 0, 0.295)), url(Imagenes/Imagen_tienda1.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height:80vh;
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.primera-seccion--tienda h1{
+    color:rgb(238, 236, 236);
+    font-size: 80px;
+    font-family: 'Esteban', serif;
+    text-shadow: black 5px 2px;
+
+
+}
+
+
+/*---------------CSS de la segunda seccion------------------*/
+
+.seccion-productos{
+    width:100%;
+}
+
+.seccion-productos h2{
+    color:white;
+    font-family: 'Esteban', serif;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/*-------------------------TURISMO---------------------------*/
+
+/*---------------CSS de la primera seccion------------------*/
+
+.primera-seccion--turismo{
+    background: linear-gradient(rgba(0, 0, 0, 0.295),rgba(0, 0, 0, 0.295)), url(Imagenes/Imagen_turismo1.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height:80vh;
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+
+
+
+.primera-seccion--turismo h1{
+    color:rgb(238, 236, 236);
+    font-size: 80px;
+    font-family: 'Esteban', serif;
+    text-shadow: black 5px 2px;
+    text-align: center;
+
+
+   
+}
+/*---------------CSS de la segunda seccion------------------*/
+.seccion-servicios{
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.seccion-servicios h2{
+    color:white;
+    font-family: 'Esteban', serif;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    padding:20px;
+}
+
+.seccion-servicios-parrafo{
+    color:white;
+    font-family: 'Esteban', serif;
+    font-size: 30px;
+    text-align: center;
+    width:60%;
+}
+
+.contenedor-servicios{
+    width:100%;
+    padding-bottom: 20px;
+    display:flex;
+    justify-content:space-around;
+}
+
+.servicio{
+    height:700px;
+    width:390px;
+    text-align: center;
+    background-color: white;
+    border-radius: 12px;
+    margin-bottom:20px;
+    
+}
+
+.servicio-imagen img{
+    height:345px;
+    width:390px;
+}
+
+.servicio-imagen img:hover{
+    transition:1s;
+    transform:scale(1.05,1.05)
+}
+.servicio-informacion h3{
+    font-style: italic;
+    background-color: rgb(122, 1, 1);
+    color:white;
+    font-size: 30px;
+    margin: 6px 6px;
+    border-top: 1px solid;
+}
+
+.servicio-informacion p{
+    color: black;
+    font-family:'Esteban', serif;
+    padding-bottom:20px;
+}
+
+
+.ubicacion{
+    width:100%;
+    padding-bottom: 20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.ubicacion h2{
+    color:white;
+    font-family: 'Esteban', serif;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+
+
+/*-------------------------CONTACTO---------------------------*/
+
+/*---------------CSS de la primera seccion------------------*/
+
+.primera-seccion--contacto{
+    background: linear-gradient(rgba(0, 0, 0, 0.295),rgba(0, 0, 0, 0.295)), url(Imagenes/Imagen_contacto1.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height:80vh;
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.primera-seccion--contacto h1{
+    color:rgb(238, 236, 236);
+    font-size: 80px;
+    font-family: 'Esteban', serif;
+    text-shadow: black 5px 2px;
+
+}
+
+/*---------------CSS de la segunda seccion------------------*/
+
+.redes-sociales{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height:300px;
+}
+
+.redes-sociales img{
+    width:80px;
+    height:80px;
+}
+
+.redes-sociales img:hover{
+    transition: 1s;
+    transform: scale(1.3,1.3);
+}
+
+/*---------------CSS de la tercera seccion------------------*/
+
+
+.formulario{
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   height:500px;
+   
+   width:100%;
+}
+
+
+
+.formulario-datos input{
+    
+    height: 30px;
+    width: 300px;
+    border-radius: 3px;
+    margin-bottom:66px;
+    margin-right:30px;
+}
+
+.formulario-mensaje{
+    margin-bottom:66px;
+
+}
+.formulario-mensaje textarea{
+    
+    height: 180px;
+    width: 500px;
+    border-radius: 3px;
+    margin-bottom:9px;
+
+}
+
+
+
+.boton-enviar{
+   width: 500px;
+   height: 30px;
+   color:white;
+   background-color: rgb(83, 8, 8);
+   border: none;
+   border-radius: 3px;
+}
+
+.boton-enviar:hover{
+    transition: 1s;
+    color:rgb(51, 51, 155);
+}
+
+/*-------------------------CARRITO---------------------------*/
+
+/*---------------CSS de la primera seccion------------------*/
+
+
+
+.primera-seccion--carrito{
+    background-color: black;
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1px solid white;
+}
+
+.primera-seccion--carrito h1{
+    color:white;
+    font-family: 'Esteban', serif;
+    font-size: 60px;
+    text-align: center;
+    padding:20px;
+
+}
+
+/*---------------CSS de la segunda seccion------------------*/
+
+.segunda-seccion--carrito{
+    background-color: white;
+    display:flex;
+    justify-content:center;
+}
+
+.contenedor-carrito{
+    width:80%;
+    border-radius: 3px;
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    grid-template-rows:40px 80px 50px;                          /*------SE HA APLICADO GRID-TEMPLATE-AREA------------*/
+    margin:100px 0px;
+    grid-template-areas:
+
+        "espacio espacio producto-titulo precio-titulo cantidad-titulo subtotal-titulo"
+        "cancelar producto-imagen producto-nombre precio cantidad subtotal"
+        "actualizar actualizar actualizar actualizar actualizar actualizar";
+    }
+
+
+.contenedor-carrito div{
+    border:1px solid gray;
+    display:flex;
+    align-items:center;
+}
+
+.espacio{
+    grid-area: espacio;
+    background-color: black;
+    
+}
+
+.producto-titulo{
+    grid-area: producto-titulo;
+    width:300px;
+    padding-left:10px;
+    background-color: black;
+    color: white;
+    
+}
+
+.precio-titulo{
+    grid-area: precio-titulo;
+    padding-left:10px;
+    background-color: black;
+    color: white;
+}
+
+.cantidad-titulo{
+    grid-area: cantidad-titulo;
+    padding-left:10px;
+    background-color: black;
+    color: white;
+}
+
+.subtotal-titulo{
+    grid-area: subtotal-titulo;
+    padding-left:10px;
+    background-color: black;
+    color: white;
+}
+
+.cancelar{
+    grid-area: cancelar;
+    padding-left:10px;
+    color:red;
+    font-weight: bold;
+}
+
+.producto-imagen{
+    grid-area: producto-imagen;
+    padding-left:10px;
+}
+
+.producto-imagen img{
+    height:65px;
+    width:50px;
+}
+
+.producto-nombre{
+    grid-area: producto-nombre;
+    width:300px;
+    padding-left:10px;
+}
+
+
+
+.precio{
+    grid-area: precio;
+    padding-left:10px;
+}
+
+.cantidad{
+    grid-area: cantidad;
+    padding-left:10px;
+}
+
+.cantidad input{
+    width: 60px;
+    padding-left:10px;
+}
+
+.subtotal{
+    grid-area: subtotal;
+    padding-left:10px;
+}
+
+.actualizar{
+   grid-area: actualizar;
+   padding-right: 10px;
+   display:flex;
+   justify-content: flex-end;
+}
+
+.boton-carrito{
+    background-color: black;
+    text-decoration: dashed;
+    color:white;
+    border-radius: 10px;
+    padding:7px;
+    border:2px;
+    /*Usamos em para tomar como referencia el tamaño actual del div padre*/
+    font-size: 1em;
+    width:140px;
+}
+
+
+.boton-carrito:hover{
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
+/*---------------CSS de la tercera seccion------------------*/
+
+.tercera-seccion--carrito{
+    background-color: white;
+    display:flex;
+    justify-content:flex-end;
+    padding-right:100px;
+}
+
+.contenedor-carrito-dos{
+    width:50%;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows:40px 40px 80px 40px 50px;
+    margin-bottom:100px;
+}
+
+.contenedor-carrito-dos div{
+    border:1px solid gray;
+    border-radius: 3px;
+    display: grid;
+    align-items:center;
+    padding-left:10px;
+}
+
+.titulo-total {
+    background-color: black;
+    color:azure;
+    grid-column-start: span 2;
+}
+
+.titulo-total h2{
+    font-size:30px;
+}
+
+.boton-finalizar{
+    grid-column-start: span 2;
+    background-color: rgb(85, 0, 67);
+    border: none;
+    border-radius: 3px;
+   
+}
+
+.boton-finalizar a{
+    text-decoration: none;
+    font-size: 25px;
+    color:white;
+    text-align: center;
+}
+
+.boton-finalizar:hover{
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
+/*------------------------------------------RESPONSIVE MOBILE ------------------------------------------------*/
+@media all and (max-width:450px) {
+
+    /*------------------INDEX---------------*/
+    .navegador-principal {
+        flex-direction: column;
+    }
+
+    .navegador-principal__lista li{
+        margin:3px;
+    
+    }
+    .navegador-principal__lista li a{
+       font-size: 15px;
+    
+    }
+
+    .contenedor-ofertas{
+        flex-direction: column;
+        align-items:center;
+       
+    }
+    .ofertas-diseño{
+        margin-bottom:20px;
+
+    }
+
+    
+    .contenedor-productos{
+        flex-direction:column;
+        align-items:center;
+    }
+    
+    .titulo-nav h2{
+        font-size: 25px;
+        position:relative;
+        bottom:15px;
+        left:35px;
+    }
+    
+    .navegador-footer__lista{
+        flex-direction:column;
+        font-size:12px;
+        left:20px;
+
+    }
+
+    .titulo-vinos h2{
+        font-size: 25px;
+        position:relative;
+        bottom:15px;
+    }
+    .vinos-footer__lista{
+        flex-direction:column;
+        font-size:12px;
+
+    
+    
+    }
+
+    .copyright-footer{
+        flex-direction:column;
+        text-align: center;
+    }
+
+    .copyright-parrafo-uno{
+        font-size: 13px;
+        width:80%;
+    }
+
+    .copyright-parrafo-dos{
+        padding:5px 0px;
+    }
+
+    /*------------------TURISMO---------------*/
+
+    .contenedor-servicios{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mapa {
+        width:90%;
+    }
+    
+    /*------------------CONTACTO---------------*/
+
+    .formulario{
+        flex-direction: column;
+        margin-top:40px;
+        justify-content:flex-start;
+        margin-bottom:40px;
+     }
+
+     
+     .formulario-datos input{
+        margin-left:30px;
+     }
+
+     /*------------------CARRITO---------------*/
+
+    
+    .contenedor-carrito{
+
+        grid-template-columns:repeat(2,1fr);
+        grid-auto-rows:50px;
+        grid-template-areas:
+
+            "espacio espacio"
+            "cancelar producto-imagen"
+            "producto-titulo producto-nombre"
+            "precio-titulo precio"                              /*------SE HA APLICADO GRID-TEMPLATE-AREA------------*/
+            "cantidad-titulo cantidad"
+            "subtotal-titulo subtotal"
+            "actualizar actualizar";
+    }
+
+    .espacio{
+        background-color: black;
+    }
+    .producto-nombre{
+        width:auto;
+    }
+
+    .cancelar{
+        background-color: rgb(231, 228, 228);
+    }
+
+    .producto-titulo{
+        width:auto;
+        background-color: rgb(231, 228, 228);
+        color:black;
+    }
+
+    .precio-titulo{
+        background-color: rgb(231, 228, 228);
+        color:black;
+    }
+
+    .cantidad-titulo{
+        background-color: rgb(231, 228, 228);
+        color:black;
+    }
+
+    .subtotal-titulo{
+        background-color: rgb(231, 228, 228);
+        color:black;
+    }
+
+    .actualizar{
+        width:100%;
+        padding-right:0;
+        border-radius: 3px;
+    }
+    .boton-carrito{
+        width:100%;
+        height:100%;
+        border-radius: 3px;
+        text-align:center;
+        font-size:25px;
+
+    }
+    .tercera-seccion--carrito{
+        padding-right:0;
+        justify-content:center;
+    }
+
+    .contenedor-carrito-dos{
+        width:80%;
+        padding-left:0;
+    }
+
+    .subtitulos{
+        background-color: rgb(231, 228, 228);
+    }
+
+    
+}
+
+
+/*---------------------------------------------RESPONSIVE TABLET --------------------------------------------*/
+
+@media all and (min-width:451px) AND (max-width:820px) {
+
+    /*------------------INDEX---------------*/
+    
+    .contenedor-ofertas{
+       
+        flex-wrap: wrap;
+    }
+    .ofertas-diseño{
+        margin-bottom:20px;
+      
+    }
+    .contenedor-productos{
+        flex-wrap: wrap;
+       
+    }
+
+    .titulo-nav h2{
+        font-size: 25px;
+        position:relative;
+        bottom:15px;
+        left:35px;
+    }
+
+    .navegador-footer__lista{
+        flex-direction:column;
+        font-size:12px;
+        left:20px;
+    }
+
+    .titulo-vinos h2{
+        font-size: 25px;
+        position:relative;
+        bottom:15px;
+    }
+    .vinos-footer__lista{
+        flex-direction:column;
+        font-size:12px;
+
+    }
+
+    .copyright-footer{
+        flex-direction:column;
+        text-align: center;
+    }
+
+    .copyright-parrafo-uno{
+        font-size: 13px;
+        width:80%;
+    }
+
+    .copyright-parrafo-dos{
+        padding:5px 0px;
+    }
+
+    /*------------------TURISMO---------------*/
+    
+    .contenedor-servicios{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicio{
+        width:60%;
+    }
+
+    .servicio-imagen img {
+        width:100%;
+    }
+
+    .boton{
+        font-size:2em;
+    }
+
+    .mapa {
+        width:90%;
+    }
+
+    /*---------------CONTACTO--------------*/
+
+    .formulario{
+        flex-direction: column;
+        margin-top:40px;
+        justify-content:flex-start;
+        margin-bottom:40px;
+     }
+
+     
+     .formulario-datos input{
+        margin-left:30px;
+     }
+
+    /*----------------CARRITO---------------*/
+
+    .contenedor-carrito{
+
+        grid-template-columns:repeat(2,1fr);
+        grid-auto-rows:50px;
+        grid-template-areas:
+
+            "espacio espacio"
+            "cancelar producto-imagen"
+            "producto-titulo producto-nombre"
+            "precio-titulo precio"
+            "cantidad-titulo cantidad"
+            "subtotal-titulo subtotal"
+            "actualizar actualizar";
+    }
+
+    .espacio{
+        background-color: black;
+    }
+    .producto-nombre{
+        width:auto;
+    }
+
+    .cancelar{
+        background-color: rgb(231, 228, 228);
+    }
+
+    .producto-titulo{
+        width:auto;
+        background-color: rgb(231, 228, 228);
+        color:black;
+    }
+
+    .precio-titulo{
+        background-color: rgb(231, 228, 228);
+        color:black;
+    }
+
+    .cantidad-titulo{
+        background-color: rgb(231, 228, 228);
+        color:black;
+    }
+
+    .subtotal-titulo{
+        background-color: rgb(231, 228, 228);
+        color:black;
+    }
+
+    .actualizar{
+        width:100%;
+        padding-right:0;
+        border-radius: 3px;
+    }
+    .boton-carrito{
+        width:100%;
+        height:100%;
+        border-radius: 3px;
+        text-align:center;
+        font-size:25px;
+
+    }
+    .tercera-seccion--carrito{
+        padding-right:0;
+        justify-content:center;
+    }
+
+    .contenedor-carrito-dos{
+        width:80%;
+        padding-left:0;
+    }
+
+    .subtitulos{
+        background-color: rgb(231, 228, 228);
+    }
+}
