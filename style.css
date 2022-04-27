@@ -1013,7 +1013,7 @@
     }
 
     .enlaces-footer{
-        height:250px;
+        height:270px;
     }
 
     .footer__logo img{
@@ -1064,6 +1064,11 @@
 
     .copyright-parrafo-dos{
         padding:5px 0px;
+    }
+
+    .boton-whatsapp img{
+        bottom: 130px;
+      
     }
 
 
