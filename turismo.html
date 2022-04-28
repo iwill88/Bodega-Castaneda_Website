@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--CSS-->
     <link rel="stylesheet" href="style.css">
     <!--Font awesome-->
@@ -60,8 +62,8 @@
 
         <!--Segunda sección-->
         <section class="seccion-servicios">
-        <h2>VEN A BEBER <br> LOS MEJORES VINOS!</h2>
-           <p class="seccion-servicios-parrafo">Vive la experiencia de visitar nuestra bodega familiar, un lugar donde lo tradicional y la autenticidad  conviven juntos. 
+        <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">VEN A BEBER <br> LOS MEJORES VINOS!</h2>
+           <p class="seccion-servicios-parrafo" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Vive la experiencia de visitar nuestra bodega familiar, un lugar donde lo tradicional y la autenticidad  conviven juntos. 
                 <br>
                 <br>
                 Tómate un alto en el camino, en un lugar al que escapar de lo convencional, de vivir el enoturismo de la forma más segura en nuestra bodega, donde la naturaleza y la arquitectura se mimetizan a la perfección.
@@ -72,7 +74,7 @@
         
 
             <div class="contenedor-servicios">
-                <div class="servicio">
+                <div class="servicio" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
                     <div class="servicio-imagen">
                         <img src="Imagenes/Imagen_turismo2.jpg" alt="servicio 1">
                     </div>
@@ -84,8 +86,8 @@
                     
                 </div>
     
-                <div class="servicio">
-                    <div class="servicio-imagen">
+                <div class="servicio" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="servicio-imagen" >
                         <img src="Imagenes/Imagen_turismo3.jpg" alt="servicio 2">
                     </div>
                     <div class="servicio-informacion">
@@ -187,6 +189,10 @@
         <!--Fin de la sección boton whatsapp-->
 
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

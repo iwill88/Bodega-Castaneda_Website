@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--CSS-->
     <link rel="stylesheet" href="style.css">
     <!--Font awesome-->
@@ -62,17 +64,17 @@
         <section class="segunda-seccion">
             <h2>SOBRE NOSOTROS</h2>
             <div class="contenedor-historia" >
-                <img class="izquierda" src="Imagenes/Imagen_nosotros2.jpg" alt="Imagen nosotros 1">
-                <p>La historia Bodega Castañeda comienza con el ingenio de Robert Castañeda y Lourdes Salinas y el esfuerzo y unión de una familia. Juntos crearon, a ojos de Alexander Castañeda, uno de los mejores vinos del mundo.  </p>
+                <img class="izquierda" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300" src="Imagenes/Imagen_nosotros2.jpg" alt="Imagen nosotros 1">
+                <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">La historia Bodega Castañeda comienza con el ingenio de Robert Castañeda y Lourdes Salinas y el esfuerzo y unión de una familia. Juntos crearon, a ojos de Alexander Castañeda, uno de los mejores vinos del mundo.  </p>
             </div>
-            <div class="contenedor-historia">
-                <p>Con el pasar de los años la familia Castañeda fue expandiendo sus viñas en todo el sur del Peru, aumentando su produccion de vinos y sin dejar de lado la calidad que los caracteriza, en busca del perfecto aroma, sabor y color.</p>
-                <img class="derecha"src="Imagenes/Imagen_nosotros3.jpg" alt="Imagen nosotros 2">
+            <div class="contenedor-historia" >
+                <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">Con el pasar de los años la familia Castañeda fue expandiendo sus viñas en todo el sur del Peru, aumentando su produccion de vinos y sin dejar de lado la calidad que los caracteriza, en busca del perfecto aroma, sabor y color.</p>
+                <img class="derecha" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="300"src="Imagenes/Imagen_nosotros3.jpg" alt="Imagen nosotros 2">
                 </div>
             </div>
-            <div class="contenedor-historia">
-                <img class="izquierda"src="Imagenes/Imagen_nosotros4.jpg" alt="Imagen nosotros 3">
-                <p>Actualmente, cuentan con cuatro bodegas, un hotel y un equipo humano de más de 50 personas. Familia Fernández Rivera ha sabido adaptarse a las necesidades de su tiempo. En el presente, sus vinos y productos se comercializan en todo Sudamerica. </p>
+            <div class="contenedor-historia" >
+                <img class="izquierda" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300"src="Imagenes/Imagen_nosotros4.jpg" alt="Imagen nosotros 3">
+                <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">Actualmente, cuentan con cuatro bodegas, un hotel y un equipo humano de más de 50 personas. Familia Fernández Rivera ha sabido adaptarse a las necesidades de su tiempo. En el presente, sus vinos y productos se comercializan en todo Sudamerica. </p>
                 </div>
             </div>
             
@@ -159,6 +161,10 @@
         <!--Fin de la sección boton whatsapp-->
 
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--CSS-->
     <link rel="stylesheet" href="style.css">
     <!--Font awesome-->
@@ -62,7 +64,7 @@
         <section class="segunda-seccion">
 
             <h2>Ofertas especiales</h2>
-            <div class="contenedor-ofertas">
+            <div class="contenedor-ofertas" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
                 <div class="ofertas-diseño">
                     
                         <img src="Imagenes/Imagen_oferta1.jpg" alt="oferta 1">
@@ -99,7 +101,7 @@
 
             <h2>Los mas vendidos del mes</h2>
 
-            <div class="contenedor-productos">
+            <div class="contenedor-productos" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
                 <div class="producto">
                     <div class="producto__botella">
                         <img src="Imagenes/Imagen_vino1_malbec.jpg" alt="vino 1">
@@ -210,7 +212,13 @@
         <!--Fin de la sección boton whatsapp-->
 
     </footer>
-    
+
+    <!------JS script------->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

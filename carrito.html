@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--CSS-->
     <link rel="stylesheet" href="style.css">
     <!--Font awesome-->
@@ -59,9 +61,9 @@
         <!--Fin de la primera sección-->
 
         <!--Segunda sección-->
-        <section class="segunda-seccion--carrito">
+        <section class="segunda-seccion--carrito" >
 
-            <div class="contenedor-carrito">
+            <div class="contenedor-carrito" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-delay="300">
                 <div class="espacio"></div>
                 <div class="espacio"></div>
                 <div class="producto-titulo">Producto</div>
@@ -101,7 +103,7 @@
 
         <!--Tercera sección-->
         <section class="tercera-seccion--carrito">
-            <div class="contenedor-carrito-dos">
+            <div class="contenedor-carrito-dos" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="300">
                 <div class="titulo-total">
                     <h2>Total del carrito</h2>
                 </div>
@@ -212,6 +214,10 @@
         <!--Fin de la sección boton whatsapp-->
 
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
