@@ -13,6 +13,7 @@
 /*-----------------------CSS grid layout-------------------*/
 
 .grid-contenedor{
+    font-family: 'Esteban', serif;
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr;
@@ -223,7 +224,7 @@
     background-color: rgb(83, 14, 25);
     height: 40px;
     width: 390px;
-    font-size: 18px;
+    font-size: 15px;
     color:white;
     text-align: center;
 }
@@ -356,7 +357,7 @@
     grid-area: nav;
     display:flex;
     position:relative;
-    right:15px;
+    right:45px;
       
 }
 
@@ -400,7 +401,7 @@
     grid-area:vinos;
     display:flex;
     position:relative;
-    right:15px;
+    right:45px;
 
 }
 .vinos-footer__lista li{
@@ -1078,9 +1079,10 @@
     .navegador-footer__lista{
         flex-direction:column;
         font-size:12px;
-        left:20px;
         position:relative;
-        bottom:8px;
+        left:-10px;
+
+        
 
     }
 
@@ -1093,7 +1095,7 @@
         flex-direction:column;
         font-size:12px;
         position:relative;
-        bottom:8px;
+       
     
     
     }
