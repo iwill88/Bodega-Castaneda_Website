@@ -1004,6 +1004,19 @@
         right:15px;
     }
 
+    .segunda-seccion h2{
+        font-size: 16px;
+      
+    }
+
+    .tercera-seccion h2{
+        font-size:32px;
+    }
+
+    .cuarta-seccion h2{
+        font-size:32px;
+    }
+
     .contenedor-ofertas{
         flex-direction: column;
         align-items:center;
@@ -1075,6 +1088,10 @@
         right:15px;
     }
 
+    .segunda-seccion--nosotros h2{
+        font-size: 32px;
+    }
+
     .contenedor-historia p{
 
         font-size: 15px;
@@ -1085,6 +1102,10 @@
     .primera-seccion--tienda h1{
         font-size: 50px;
 
+    }
+
+    .seccion-productos h2{
+        font-size: 32px;
     }
 
 
@@ -1113,6 +1134,10 @@
        justify-content: end;
    }
 
+   .ubicacion h2{
+       font-size: 32px;
+   }
+
     .mapa {
         width:90%;
     }
@@ -1120,6 +1145,10 @@
     /*------------------CONTACTO---------------*/
     .primera-seccion--contacto h1 {
         font-size: 50px;
+    }
+
+    .segunda-seccion--contacto h2{
+        font-size: 32px;
     }
       
 
@@ -1412,7 +1441,7 @@
 
     .navegador-footer__lista{
         flex-direction:column;
-        font-size:12px;
+    
         
     }
 
