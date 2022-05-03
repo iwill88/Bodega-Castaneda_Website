@@ -13,6 +13,7 @@
 /*-----------------------CSS grid layout-------------------*/
 
 .grid-contenedor{
+    
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr;
@@ -29,23 +30,18 @@
 
 .contenedor-encabezado{
     grid-area: contenedor-encabezado;
+    font-family: 'Esteban', serif;
     width: 100%;
     background-color: rgb(0, 0, 0);
     position: sticky;
     top:0;
-    z-index: 1; /*Esto nos sirve para para que el header tenga prioridad sobre las demas capas*/
+    z-index: 2; /*Esto nos sirve para para que el header tenga prioridad sobre las demas capas*/
    
 
 }
 
 /*-----CSS del navegador principal dentro del header------*/
 
-.navegador-principal {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-   
-}
 
 @keyframes fadeIn {
     0% {
@@ -76,46 +72,30 @@
 
 
 .navegador-principal__lista{
-   list-style: none;
-   display:flex;
-   width:auto;
+
    animation: fadeIn 1s ;
-  
    
+  
 }
 
-.navegador-principal__lista li{
-    margin:15px;
-    
 
-}
-
-.navegador-principal__lista li a{
-    text-decoration: none;
+.navegador-principal__lista{
     color: white;
     font-size: 1.25rem;
-    font-family: 'Esteban', serif;
+   
     
     
 }
 
-.navegador-principal__lista li a:hover{
-    transition: 1s;
-    text-shadow: none;
-    color:rgb(51, 51, 155);
-    
-    
-}
 
 .fa-solid{
-    color:white;
+    color:gray;
     font-size: 30px;
 }
 
 .navegador-principal__carrito i:hover{
     transition: 0.5s;
-    text-shadow: none;
-    color:rgb(51, 51, 155);
+    color:white;
     transform:scale(1.20,1.20);
     
     
@@ -178,14 +158,36 @@
     
 }
 
+
 /*-----------------CSS de la segunda seccion-----------------*/
 
-.segunda-seccion{
+.segunda-seccion {
+    width:100%;
+   
+}
+
+.segunda-seccion h2{
+    color:white;
+    font-style: italic;
+    font-family: 'Esteban', serif;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.carrusel-imagen {
+    height:420px;
+    object-fit: cover;
+}
+/*-----------------CSS de la tercera seccion-----------------*/
+
+.tercera-seccion{
     width:100%;
     
 }
 
-.segunda-seccion h2{
+.tercera-seccion h2{
     color:white;
     font-family: 'Esteban', serif;
     font-size: 40px;
@@ -196,6 +198,7 @@
 }
 
 .contenedor-ofertas{
+    font-family: 'Esteban', serif;
     width:100%;
     padding-bottom: 20px;
     display:flex;
@@ -223,7 +226,7 @@
     background-color: rgb(83, 14, 25);
     height: 40px;
     width: 390px;
-    font-size: 18px;
+    font-size: 15px;
     color:white;
     text-align: center;
 }
@@ -231,17 +234,15 @@
 
 
 
-/*-----------------CSS de la tercera seccion-----------------*/
+/*-----------------CSS de la cuarta seccion-----------------*/
 
-.tercera-seccion {
+.cuarta-seccion {
     width:100%;
    
 }
 
 
-
-
-.tercera-seccion h2{
+.cuarta-seccion h2{
     color:white;
     font-family: 'Esteban', serif;
     font-size: 40px;
@@ -252,7 +253,7 @@
 }
 
 .contenedor-productos{
-
+    font-family: 'Esteban', serif;
     padding-bottom: 20px;
     display:flex;
     justify-content:space-around;
@@ -291,6 +292,7 @@
 
 .boton{
     background-color: black;
+    font-family:'Esteban', serif;
     text-decoration: dashed;
     color:white;
     border-radius: 10px;
@@ -310,7 +312,6 @@
 }
 /*-----------------------CSS del footer---------------------*/
 
-
 .contenedor-footer{
     grid-area:contenedor-footer;
     width: 100%;
@@ -319,16 +320,6 @@
  
 }
 
-.enlaces-footer{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    grid-template-rows:80px 80x 30px;                   /*------SE HA APLICADO GRID-TEMPLATE-AREA------------*/
-    grid-template-areas:
-        "logo titulo-nav titulo-vinos"
-        "logo nav vinos"
-        "copyright copyright copyright";
-
-}
 .footer__logo{
     grid-area:logo;
     align-self:center;
@@ -342,36 +333,32 @@
 
 
 .titulo-nav{
-    grid-area:titulo-nav;
     color: white;
-    font-size: 20px;
+    font-size: 31px;
     font-family: 'Esteban', serif;
     text-transform: uppercase;
-    position:relative;
-    top:35px;
+   
     
 }
 
 .navegador-footer__lista{
-    grid-area: nav;
     display:flex;
+    list-style:none;
+    margin:0;
+    padding:0;
     position:relative;
-    right:15px;
+    right:11px;
+    
       
 }
 
-.navegador-footer__lista li{
-   list-style:none;
-   
-    
-}
 
 
 .navegador-footer__lista li a{
     text-decoration: none;
     color: white;
     font-family: 'Esteban', serif;
-    margin-left: 15px;
+    padding-left: 15px;
     
 }
 
@@ -384,65 +371,22 @@
 }
 
 
-.titulo-vinos{
-    grid-area:titulo-vinos;
-    color: white;
-    font-size: 20px;
-    font-family: 'Esteban', serif;
-    text-transform: uppercase;
-    position:relative;
-    top:35px;
-    
-    
-}
 
-.vinos-footer__lista {
-    grid-area:vinos;
-    display:flex;
-    position:relative;
-    right:15px;
-
-}
-.vinos-footer__lista li{
-    list-style: none;
-    
-    
-}
-
-.vinos-footer__lista li a{
-    text-decoration: none;
-    color: white;
-    font-family: 'Esteban', serif;
-    margin-left: 15px;
-    
-}
-
-.vinos-footer__lista li a:hover{
-    transition: 1s;
-    text-shadow: none;
-    color:rgb(51, 51, 155);
-    
-    
-}
 
 .copyright-footer{
-    grid-area:copyright;
-    
-    width:100%;
     color: white;
     font-family: sans-serif;
     border-top: 1px solid white;
-    display:flex;
-    justify-content:space-between;
     align-items:center;
+    
+ 
 }
 
 
 .copyright-parrafo-dos{
     text-transform: uppercase;
+    font-size:15px;
 }
-
-
 
 
 
@@ -494,10 +438,24 @@
 
 
 
+
 /*---------------CSS de la segunda seccion------------------*/
 
 
+.segunda-seccion--nosotros{
+    width:100%;
+    
+}
 
+.segunda-seccion--nosotros h2{
+    color:white;
+    font-family: 'Esteban', serif;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 .contenedor-historia{
     
@@ -623,9 +581,6 @@
 /*---------------CSS de la segunda seccion------------------*/
 .seccion-servicios{
     width: 100%;
-    display:flex;
-    flex-direction:column;
-    align-items: center;
 }
 
 .seccion-servicios h2{
@@ -642,48 +597,51 @@
     font-family: 'Esteban', serif;
     font-size: 30px;
     text-align: center;
-    width:60%;
+    padding:0px 260px;
 }
 
 .contenedor-servicios{
-    width:100%;
-    padding-bottom: 20px;
     display:flex;
-    justify-content:space-around;
+    justify-content: space-around;
+}
+.contenedor-servicios-dos{
+    padding: 50px 0px;
+  
+
 }
 
+
 .servicio{
-    height:700px;
-    width:390px;
     text-align: center;
-    background-color: white;
-    border-radius: 12px;
-    margin-bottom:20px;
     
 }
 
-.servicio-imagen img{
+.servicio-imagen{
     height:345px;
-    width:390px;
+    width:25rem;
 }
 
 .servicio-imagen img:hover{
     transition:1s;
     transform:scale(1.05,1.05)
 }
+.servicio-informacion{
+    padding:0;
+    margin:0;
+}
 .servicio-informacion h3{
     font-style: italic;
     background-color: rgb(122, 1, 1);
     color:white;
     font-size: 30px;
-    margin: 6px 6px;
+    font-family:'Esteban', serif;
     border-top: 1px solid;
 }
 
 .servicio-informacion p{
     color: black;
     font-family:'Esteban', serif;
-    padding-bottom:20px;
+    padding:10px;
 }
 
 
@@ -735,6 +693,21 @@
 }
 
 /*---------------CSS de la segunda seccion------------------*/
+
+.segunda-seccion--contacto{
+    width:100%;
+    
+}
+
+.segunda-seccion--contacto h2{
+    color:white;
+    font-family: 'Esteban', serif;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 .redes-sociales{
     display:flex;
@@ -931,7 +904,7 @@
 }
 
 .cantidad input{
-    width: 60px;
+    width: 90px;
     padding-left:10px;
 }
 
@@ -1024,19 +997,7 @@
 @media all and (max-width:450px) {
 
     /*------------------INDEX---------------*/
-    .navegador-principal {
-        flex-direction: column;
-    }
-
-    .navegador-principal__lista li{
-        margin:5px;
-    
-    }
-    .navegador-principal__lista li a{
-       font-size: 15px;
-    
-    }
-
+   
     .primera-seccion h1{
         font-size: 40px;
         position:relative;
@@ -1059,62 +1020,49 @@
         align-items:center;
     }
 
-    .enlaces-footer{
-        height:270px;
+    .enlaces-footer-responsive{
+        height:140px;
     }
-
     .footer__logo img{
         width: auto;
         height: 100px;
         
     }
     
-    .titulo-nav h2{
+    .titulo-nav {
         font-size: 25px;
-        position:relative;
-        bottom:23px;
-        left:35px;
+
     }
     
     .navegador-footer__lista{
-        flex-direction:column;
-        font-size:12px;
-        left:20px;
-        position:relative;
-        bottom:8px;
 
+        font-size:12px;
+        flex-direction:column;
+        line-height:normal;
+        position:relative;
+        right: 14px;
+        bottom:10px;
+        
     }
 
-    .titulo-vinos h2{
-        font-size: 25px;
+    .vinos-footer-responsive{
         position:relative;
-        bottom:23px;
-    }
-    .vinos-footer__lista{
-        flex-direction:column;
-        font-size:12px;
-        position:relative;
-        bottom:8px;
-    
-    
+        bottom:7px;
     }
 
     .copyright-footer{
         flex-direction:column;
         text-align: center;
+        line-height:normal;
+       
     }
 
     .copyright-parrafo-uno{
         font-size: 13px;
-        width:80%;
-    }
-
-    .copyright-parrafo-dos{
-        padding:5px 0px;
     }
 
     .boton-whatsapp img{
-        bottom: 130px;
+        bottom: 180px;
       
     }
 
@@ -1152,12 +1100,18 @@
     
     .seccion-servicios-parrafo{
         font-size: 20px;
+        padding:0px 50px;
     }
 
-    .contenedor-servicios{
-        flex-direction: column;
-        align-items: center;
+    .contenedor-servicios-dos{
+        flex-direction:column;
+        align-items:center;
     }
+
+   .servicio{
+       padding:20px 0px;
+       justify-content: end;
+   }
 
     .mapa {
         width:90%;
@@ -1306,18 +1260,12 @@
     .navegador-footer__lista{
         flex-direction:column;
         font-size:12px;
-        left:20px;
+        
     }
 
-    .titulo-vinos h2{
-        font-size: 25px;
+    .vinos-footer-responsive{
         position:relative;
-        bottom:15px;
-    }
-    .vinos-footer__lista{
-        flex-direction:column;
-        font-size:12px;
-
+        bottom:7px;
     }
 
     .copyright-footer{
@@ -1327,31 +1275,29 @@
 
     .copyright-parrafo-uno{
         font-size: 13px;
-        width:80%;
     }
 
-    .copyright-parrafo-dos{
-        padding:5px 0px;
+    .boton-whatsapp img{
+        bottom: 180px;
+      
     }
-
     /*------------------TURISMO---------------*/
     
-    .contenedor-servicios{
-        flex-direction: column;
-        align-items: center;
+    .seccion-servicios-parrafo{
+        font-size: 20px;
+        padding:0px 50px;
+    }
+    .contenedor-servicios-dos{
+        flex-direction:column;
+      
     }
 
     .servicio{
-        width:60%;
-    }
+        padding:20px 0px;
 
-    .servicio-imagen img {
-        width:100%;
+        
     }
-
-    .boton{
-        font-size:2em;
-    }
+    
 
     .mapa {
         width:90%;
@@ -1447,5 +1393,45 @@
 
     .subtitulos{
         background-color: rgb(231, 228, 228);
+    }
+}
+
+/*---------------------------------------------RESPONSIVE TABLET HORIZONTAL--------------------------------------------*/
+
+@media all and (min-width:821px) AND (max-width:1200px) {
+
+    /*------------------INDEX---------------*/
+    
+
+    .titulo-nav h2{
+        font-size: 25px;
+        position:relative;
+        bottom:15px;
+        left:35px;
+    }
+
+    .navegador-footer__lista{
+        flex-direction:column;
+        font-size:12px;
+        
+    }
+
+    .vinos-footer-responsive{
+        position:relative;
+        bottom:7px;
+    }
+
+    .copyright-footer{
+        flex-direction:column;
+        text-align: center;
+    }
+
+    .copyright-parrafo-uno{
+        font-size: 13px;
+    }
+
+    .boton-whatsapp img{
+        bottom: 180px;
+      
     }
 }
