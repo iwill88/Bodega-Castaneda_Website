@@ -618,7 +618,7 @@
 
 .servicio-imagen{
     height:345px;
-    width:25rem;
+    width:380px;
 }
 
 .servicio-imagen img:hover{
@@ -1112,7 +1112,7 @@
     /*------------------TURISMO---------------*/
 
     .primera-seccion--turismo h1{
-        font-size: 50px;
+        font-size: 55px;
     }
 
     .seccion-servicios h2{
