@@ -728,6 +728,15 @@
 
 /*---------------CSS de la tercera seccion------------------*/
 
+.tercera-seccion--contacto h2{
+    color:white;
+    font-family: 'Esteban', serif;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 .formulario{
    display:flex;
@@ -806,6 +815,7 @@
 /*---------------CSS de la segunda seccion------------------*/
 
 .segunda-seccion--carrito{
+    font-family: 'Esteban', serif;
     background-color: white;
     display:flex;
     justify-content:center;
@@ -941,6 +951,7 @@
 /*---------------CSS de la tercera seccion------------------*/
 
 .tercera-seccion--carrito{
+    font-family: 'Esteban', serif;
     background-color: white;
     display:flex;
     justify-content:flex-end;
@@ -1010,11 +1021,11 @@
     }
 
     .tercera-seccion h2{
-        font-size:32px;
+        font-size:34px;
     }
 
     .cuarta-seccion h2{
-        font-size:32px;
+        font-size:34px;
     }
 
     .contenedor-ofertas{
@@ -1089,7 +1100,7 @@
     }
 
     .segunda-seccion--nosotros h2{
-        font-size: 32px;
+        font-size: 34px;
     }
 
     .contenedor-historia p{
@@ -1105,7 +1116,7 @@
     }
 
     .seccion-productos h2{
-        font-size: 32px;
+        font-size: 34px;
     }
 
 
@@ -1135,7 +1146,7 @@
    }
 
    .ubicacion h2{
-       font-size: 32px;
+       font-size: 34px;
    }
 
     .mapa {
@@ -1148,7 +1159,11 @@
     }
 
     .segunda-seccion--contacto h2{
-        font-size: 32px;
+        font-size: 34px;
+    }
+
+    .tercera-seccion--contacto h2{
+        font-size: 34px;
     }
       
 
