@@ -994,6 +994,7 @@
 
 .boton-finalizar a{
     text-decoration: none;
+    background-color: rgb(85, 0, 67);
     font-size: 25px;
     color:white;
     text-align: center;

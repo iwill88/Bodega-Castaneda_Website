@@ -9,7 +9,7 @@
     <!--AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--CSS-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!--Font awesome-->
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <!--Icono-->
@@ -26,17 +26,17 @@
               <!-----Logo------>
               <a class="navbar-brand navegador-principal__logo" href="index.html"><img class="navegador-principal__logo" src="Imagenes/Logo_Bodega_Castañeda.png" alt="Logo"></a>
               <!-----Menu principal de navegacion------>
-              <button class="navbar-toggler navegador-principal__lista " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler navegador-principal__lista-uno" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse justify-content-end navegador-principal__lista" id="navbarNavAltMarkup">
+              <div class="collapse navbar-collapse justify-content-end navegador-principal__lista-dos" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                   <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                   <a class="nav-link" href="nosotros.html">Nosotros</a>
                   <a class="nav-link" href="tienda.html">Tienda</a>
                   <a class="nav-link" href="turismo.html">Turismo</a>
                   <a class="nav-link" href="contacto.html">Contacto</a>
-                  <a class="nav-link navegador-principal__carrito" href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                  <a class="nav-link" href="carrito.html"><i class=" navegador-principal__carrito fa-solid fa-cart-shopping"></i></a>
                 </div>
               </div>
               <!-----Fin del menu principal de navegacion------>
@@ -45,7 +45,7 @@
         
     </header>
     
-    <main class="contenedor-main">
+    <main class="main-index">
         <!--Primera sección-->
         <section class="primera-seccion">
 
@@ -182,11 +182,11 @@
         <div class="container-fluid">
             <div class="row align-items-center enlaces-footer-responsive">
                 <!--Logo footer-->
-                <div class="col-md-4 col-4">
+                <div class="col-md-4 col-4 logo">
                     <a class="footer__logo" href="index.html"><img  src="Imagenes/Logo_Bodega_Castañeda.png" alt="Logo"></a>
                 </div>
                 <!--Sección navegación footer-->
-                <div class="col-md-4 col-3">
+                <div class="col-md-4 col-3 navegador-footer">
                     <h2 class="titulo-nav">
                         Menu
                     </h2>
@@ -214,7 +214,7 @@
                     <h2 class="titulo-nav">
                         Vinos
                     </h2>
-                    <ul class="navegador-footer__lista">
+                    <ul class="vinos-footer__lista">
                         <li>
                             <a href="tienda.html" >Borgoña</a>
                         </li>
@@ -251,8 +251,8 @@
         
         <!--Seccion boton whatsapp-->
 
-        <div class="boton-whatsapp">
-            <a href="whatsapp"><img  src="Imagenes/whatsapp.png" alt="whatsapp"></a>
+        <div >
+            <a class="boton-whatsapp" href="whatsapp"><img   src="Imagenes/whatsapp.png" alt="whatsapp"></a>
         </div>
     
         <!--Fin de la sección boton whatsapp-->

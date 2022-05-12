@@ -1,0 +1,54 @@
+/* Colores*/ 
+
+$dark: black;
+$white: white;
+$gray-two:rgb(231, 228, 228); 
+$wine: rgb(83, 14, 25);
+$wine-two:rgb(83, 8, 8);
+$gray: gray;
+$blue: rgb(51, 51, 155);
+$black-bg-gradient: linear-gradient(rgba(0, 0, 0, 0.295),rgba(0, 0, 0, 0.295));
+$white-special:rgb(238, 236, 236);
+$wine-special:rgb(122, 1, 1);
+$red:red;
+$purple:rgb(85, 0, 67);
+$azure:azure;
+
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Esteban&display=swap");
+
+$font-esteban: 'Esteban', serif;
+$font-sans:sans-serif;
+
+/* Animaciones */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale3d(.75,.75,1);
+    }
+
+    
+    70% {
+        opacity: 0;
+        transform: scale3d(.75,.75,1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale3d(1,1,1);
+    }
+}
+
+@keyframes fadeIntwo {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity:1;
+        transform: rotateX(0);
+    }
+    
+}

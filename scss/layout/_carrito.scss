@@ -1,0 +1,314 @@
+@import '../general/extends';
+/*-------------------------CARRITO---------------------------*/
+
+.main-carrito{
+    grid-area: contenedor-main;
+    background-color: black;
+    /*Primera seccion*/
+    .primera-seccion--carrito{
+        background-color:$dark;
+        width: 100%;
+        display:flex;
+        align-items:center; 
+        justify-content:center;
+        border:1px solid $white;
+        h1{
+            color:$white;
+            font-size: 40px;
+            text-align: center;
+            padding:20px;
+            animation: fadeIntwo 0.75s;
+        }
+    }
+    /*Segunda seccion*/
+    .segunda-seccion--carrito{
+        font-family: $font-esteban;
+        background-color: $white;
+        display:flex;
+        justify-content:center;
+        .contenedor-carrito{
+            width:80%;
+            border-radius: 3px;
+            display:grid;
+            grid-template-columns:repeat(6,1fr);
+            grid-template-rows:40px 80px 50px;                          /*------SE HA APLICADO GRID-TEMPLATE-AREA------------*/
+            margin:100px 0px;
+            grid-template-areas:
+
+                "espacio espacio producto-titulo precio-titulo cantidad-titulo subtotal-titulo"
+                "cancelar producto-imagen producto-nombre precio cantidad subtotal"
+                "actualizar actualizar actualizar actualizar actualizar actualizar";
+
+            @media all and (max-width:450px){
+                grid-template-columns:repeat(2,1fr);
+                grid-auto-rows:50px;
+                grid-template-areas:
+        
+                    "espacio espacio"
+                    "cancelar producto-imagen"
+                    "producto-titulo producto-nombre"
+                    "precio-titulo precio"                              /*------SE HA APLICADO GRID-TEMPLATE-AREA------------*/
+                    "cantidad-titulo cantidad"
+                    "subtotal-titulo subtotal"
+                    "actualizar actualizar";
+            }
+
+            @media all and (min-width:451px) AND (max-width:820px){
+                grid-template-columns:repeat(2,1fr);
+                grid-auto-rows:50px;
+                grid-template-areas:
+        
+                    "espacio espacio"
+                    "cancelar producto-imagen"
+                    "producto-titulo producto-nombre"
+                    "precio-titulo precio"
+                    "cantidad-titulo cantidad"
+                    "subtotal-titulo subtotal"
+                    "actualizar actualizar";
+            }
+            div{
+                @extend %carrito-borde;
+            }
+            .espacio{
+                grid-area: espacio;
+                background-color: $dark;
+                @media all and (max-width:450px){
+                    background-color: $dark;
+                }
+                @media all and (min-width:451px) AND (max-width:820px){
+                    background-color: $dark;
+                }
+            }
+            .producto-titulo{
+                grid-area: producto-titulo;
+                width:300px;
+                padding-left:10px;
+                background-color: $dark;
+                color: $white;
+                @media all and (max-width:450px){
+                    width:auto;
+                    background-color: $gray-two;
+                    color:$dark;
+                }
+                @media all and (min-width:451px) AND (max-width:820px){
+                    width:auto;
+                    background-color: $gray-two;
+                    color:$dark;
+                }
+            }
+            .precio-titulo{
+                grid-area: precio-titulo;
+                padding-left:10px;
+                background-color: $dark;
+                color: $white;
+                @media all and (max-width:450px){
+                    background-color: $gray-two;
+                    color:$dark;
+                }
+                @media all and (min-width:451px) AND (max-width:820px){
+                    background-color: $gray-two;
+                    color:$dark;
+                }
+            }
+            .cantidad-titulo{
+                grid-area: cantidad-titulo;
+                padding-left:10px;
+                background-color: $dark;
+                color: $white;
+                @media all and (max-width:450px){
+                    background-color: $gray-two;
+                    color:$dark;
+                }
+                @media all and (min-width:451px) AND (max-width:820px){
+                    background-color: $gray-two;
+                    color:$dark;
+                }
+            }
+            .subtotal-titulo{
+                grid-area: subtotal-titulo;
+                padding-left:10px;
+                background-color: $dark;
+                color: $white;
+                @media all and (max-width:450px){
+                    background-color: $gray-two;
+                    color:$dark;
+                }
+                @media all and (min-width:451px) AND (max-width:820px){
+                    background-color: $gray-two;
+                    color:$dark;
+                }
+            }
+            .cancelar{
+                grid-area: cancelar;
+                padding-left:10px;
+                color:$red;
+                font-weight: bold;
+                @media all and (max-width:450px){
+                    background-color: $gray-two;
+                }
+                @media all and (min-width:451px) AND (max-width:820px){
+                    background-color: $gray-two;
+                }
+            }
+            .producto-imagen{
+                grid-area: producto-imagen;
+                padding-left:10px;
+                img{
+                    height:65px;
+                    width:50px;
+                }
+            }
+            .producto-nombre{
+                grid-area: producto-nombre;
+                width:300px;
+                padding-left:10px;
+                @media all and (max-width:450px){
+                    width:auto;
+                }
+                @media all and (min-width:451px) AND (max-width:820px){
+                    width:auto;
+                }
+            }
+            .precio{
+                grid-area: precio;
+                padding-left:10px;
+            }
+            .cantidad{
+                grid-area: cantidad;
+                padding-left:10px;
+                input{
+                    width: 90px;
+                    padding-left:10px;
+                }
+            }
+            .subtotal{
+                grid-area: subtotal;
+                padding-left:10px;
+            }
+            .actualizar{
+                grid-area: actualizar;
+                padding-right: 10px;
+                display:flex;
+                justify-content: flex-end;
+                @media all and (max-width:450px){
+                    width:100%;
+                    padding-right:0;
+                    border-radius: 3px;
+                }
+                @media all and (min-width:451px) AND (max-width:820px){
+                    width:100%;
+                    padding-right:0;
+                    border-radius: 3px;
+                }
+                a{
+                    background-color: map-get($boton-general,bg-boton);
+                    font-family:map-get($boton-general,font-family);
+                    text-decoration: map-get($boton-general,text-decoration);
+                    color:map-get($boton-general,color);
+                    border-radius: map-get($boton-general,radius);
+                    padding:map-get($boton-general,padding);
+                    border:map-get($boton-general,border);
+                    font-size: 1em;
+                    &:hover{
+                        transition: 0.5s;
+                        opacity: 0.8;
+                        color:$blue;
+                    }
+                    @media all and (max-width:450px){
+                        width:100%;
+                        height:100%;
+                        border-radius: 3px;
+                        text-align:center;
+                        font-size:25px;
+                    }
+                    @media all and (min-width:451px) AND (max-width:820px){
+                        width:100%;
+                        height:100%;
+                        border-radius: 3px;
+                        text-align:center;
+                        font-size:25px;
+                    }
+                }
+            }
+        }
+    }
+    /*Tercera seccion*/
+    .tercera-seccion--carrito{
+        font-family: $font-esteban;
+        background-color: $white;
+        display:flex;
+        justify-content:flex-end;
+        padding-right:100px;
+        @media all and (max-width:450px){
+            padding-right:0;
+            justify-content:center;
+        }
+        @media all and (min-width:451px) AND (max-width:820px){
+            padding-right:0;
+            justify-content:center;
+        }
+        .contenedor-carrito-dos{
+            width:50%;
+            display:grid;
+            grid-template-columns:repeat(2,1fr);
+            grid-template-rows:40px 40px 80px 40px 50px;
+            margin-bottom:100px;
+            @media all and (max-width:450px){
+                width:80%;
+                padding-left:0;
+            }
+            @media all and (min-width:451px) AND (max-width:820px){
+                width:80%;
+                padding-left:0;
+            }
+            div{
+                border:1px solid $gray;
+                border-radius: 3px;
+                display: grid;
+                align-items:center;
+                padding-left:10px;
+                .direccion{
+                    p{
+                        @media all and (max-width:450px){
+                            line-height:0;
+                        }
+                    }
+                }
+            }
+            .titulo-total{
+                background-color: $dark;
+                color:$azure;
+                grid-column-start: span 2;
+                h2{
+                    font-size:30px;
+                }
+            }
+            .subtitulos{
+                @media all and (max-width:450px){
+                    background-color: $gray-two;
+                }
+                @media all and (min-width:451px) AND (max-width:820px){
+                    background-color: $gray-two;
+                }
+            }
+           
+            .boton-finalizar{
+                grid-column-start: span 2;
+                background-color: $purple;
+                border: none;
+                border-radius: 3px;
+                &:hover{
+                    transition: 0.5s;
+                    opacity: 0.8;
+                }
+                a{
+                    background-color: map-get($boton-finalizar,bg-boton);
+                    text-decoration:map-get($boton-finalizar,text-decoration);
+                    font-size: map-get($boton-finalizar,font-size);
+                    color:map-get($boton-finalizar,color);
+                    text-align: map-get($boton-finalizar,text-align);
+                }
+            }
+        }
+    }
+}

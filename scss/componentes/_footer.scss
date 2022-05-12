@@ -1,0 +1,236 @@
+footer{
+    grid-area:contenedor-footer;
+    width: 100%;
+    background-color: $dark;
+    border-top: 1px solid $white;
+    .container-fluid{
+        .enlaces-footer-responsive{ /*enlaces footer responsive*/
+            .logo{
+                a{
+                grid-area:logo;
+                align-self:center;
+                    img{
+                        width: auto;
+                        height: 150px;
+                        @media all and (max-width:450px){
+                            width: auto;
+                            height: 100px;
+                            }
+                    }
+                   
+                }
+            }
+            .navegador-footer{
+                h2{
+                color: $white;
+                font-size: 31px;
+                font-family: $font-esteban;
+                text-transform: uppercase;
+                @media all and (max-width:450px){
+                    font-size: 25px;
+                }
+                @media all and (min-width:451px) AND (max-width:820px){
+                    font-size: 25px;
+                   
+                }
+
+                @media all and (min-width:821px) AND (max-width:1200px){
+                    font-size: 25px;
+                  
+                }
+                }
+               
+                .navegador-footer__lista{
+                display:flex;
+                list-style:none;
+                margin:0;
+                padding:0;
+                position:relative;
+                right:11px;
+                    li{
+
+                        a{
+                        text-decoration: none;
+                        color: $white;
+                        font-family: $font-esteban;
+                        padding-left: 15px;
+                        &:hover{
+                            transition: 1s;
+                            text-shadow: none;
+                            color:$blue;
+                        }
+                        }
+                    }
+                    @media all and (max-width:450px){
+                        font-size:12px;
+                        flex-direction:column;
+                        line-height:normal;
+                        position:relative;
+                        right: 14px;
+                        bottom:10px;
+                    }
+                    @media all and (min-width:451px) AND (max-width:820px){
+                        flex-direction:column;
+                        font-size:12px;
+                    }
+                    @media all and (min-width:821px) AND (max-width:1200px){
+                        flex-direction:column;
+                    }
+                }
+                
+            }
+            .vinos-footer-responsive{ /*vinos-footer-responsive*/
+                h2{
+                    color: $white;
+                    font-size: 31px;
+                    font-family: $font-esteban;
+                    text-transform: uppercase;
+                    @media all and (max-width:450px){
+                        font-size: 25px;
+                    }
+                    @media all and (min-width:451px) AND (max-width:820px){
+                        font-size: 25px;
+                     
+                    }
+                    @media all and (min-width:821px) AND (max-width:1200px){
+                        font-size: 25px;
+                  
+                    }
+                }
+               
+                .vinos-footer__lista{
+                display:flex;
+                list-style:none;
+                margin:0;
+                padding:0;
+                position:relative;
+                right:11px;
+                    li{
+                        a{
+                        text-decoration: none;
+                        color: $white;
+                        font-family: $font-esteban;
+                        padding-left: 15px;
+                        &:hover{
+                            transition: 1s;
+                            text-shadow: none;
+                            color:$blue;
+                        }
+                        }
+                    }
+                    @media all and (max-width:450px){
+                        font-size:12px;
+                        flex-direction:column;
+                        line-height:normal;
+                        position:relative;
+                        right: 14px;
+                        bottom:10px;
+                    }
+                    @media all and (min-width:451px) AND (max-width:820px){
+                        flex-direction:column;
+                        font-size:12px;
+                    }
+                    @media all and (min-width:821px) AND (max-width:1200px){
+                        flex-direction:column;
+                    }
+                }
+                @media all and (max-width:450px){
+                    position:relative;
+                    bottom:7px;
+                }
+                @media all and (min-width:451px) AND (max-width:820px){
+                    position:relative;
+                    bottom:7px;
+                }
+                @media all and (min-width:821px) AND (max-width:1200px){
+                    position:relative;
+                    bottom:7px;
+                }
+       
+
+            }
+            @media all and (max-width:450px){
+                height:140px;
+            }
+            
+         
+        }
+        .copyright-footer{
+            color: $white;
+            font-family: $font-sans;
+            border-top: 1px solid $white;
+            align-items:center;
+                div{
+                    .copyright-parrafo-uno{ 
+                        font-family: $font-sans;
+                        @media all and (max-width:450px){
+                            font-size: 13px;
+                        }
+    
+                        @media all and (min-width:451px) AND (max-width:820px){
+                            font-size: 13px;
+                        }     
+                        @media all and (min-width:821px) AND (max-width:1200px){
+                            font-size: 13px;     
+                        }
+                    }
+                    
+                              
+                }
+                div{
+                   .copyright-parrafo-dos{
+                    text-transform: uppercase;
+                    font-size:15px;
+                    font-family: $font-sans;
+                    }
+                }
+                @media all and (max-width:450px){
+                    flex-direction:column;
+                    text-align: center;
+                    line-height:normal;
+                }
+                @media all and (min-width:451px) AND (max-width:820px){
+                    flex-direction:column;
+                    text-align: center;
+                }
+                @media all and (min-width:821px) AND (max-width:1200px){
+                    flex-direction:column;
+                    text-align: center;
+                }
+            }
+           
+          
+           
+    }
+    div{
+        .boton-whatsapp{
+            img{
+            height:50px;
+            width:50px;
+            position: fixed; /*Position se usara solamente para fijar el boton de whatsapp en todas las paginas*/
+            bottom: 110px;
+            right:10px;
+            transition:1s;
+            &:hover{ 
+                transition: 1s;
+                transform: scale(1.4);
+            }
+
+            @media all and (max-width:450px){
+                bottom: 180px;
+            }
+            @media all and (min-width:451px) AND (max-width:820px){
+                bottom: 180px;
+            }
+            @media all and (min-width:821px) AND (max-width:1200px){
+                bottom: 180px;
+            }
+
+            }
+           
+           
+
+        }
+    }
+}
+

@@ -1,0 +1,87 @@
+@import '../general/extends';
+
+/*-------------------------NOSOTROS---------------------------*/
+
+.main-nosotros {
+    grid-area: contenedor-main;
+    background-color: black;
+   /*Primera seccion*/
+    .primera-seccion--nosotros{
+        background: $black-bg-gradient, url(../Imagenes/Imagen_nosotros1.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        @extend %extend-primera-seccion;
+        h1{
+            color:$white-special;
+            font-size: 60px;
+            text-align: right;
+            text-shadow: $dark 5px 2px;
+            animation: fadeIntwo 0.75s;
+            @extend %titulo-seccion-uno;
+            @media all and (max-width:450px){
+                font-size: 34px;
+                position:relative;
+                right:15px;
+            }
+            @media all and (min-width:451px) AND (max-width:820px) {
+                font-size: 40px;
+            }
+        }
+    }
+    /*Segunda seccion*/
+    .segunda-seccion--nosotros{
+        width:100%;
+
+        h2{
+            color:$white;
+            font-size: 40px;
+            text-align: center;
+            text-transform: uppercase;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            @media all and (max-width:450px){
+                    font-size: 34px;
+            }
+        }
+        .contenedor-historia{
+            margin-left:15px;
+            display:flex;
+            align-items:center;
+
+            .izquierda{
+                    @extend %imagen-nosotros;
+                    margin-right: 2%;
+                    &:hover{
+                        transition:1s;
+                        transform:scale(1.04,1.04)
+                    }
+             }
+            .derecha{
+                    @extend %imagen-nosotros;
+                    margin-left: 2%;
+                    margin-right:15px;   
+                    &:hover{
+                        transition:1s;
+                        transform:scale(1.04,1.04)
+                    }
+            }
+            p{
+                color:$white;
+                font-size: 20px;
+                font-family: $font-esteban;
+                text-align: justify;
+                width:60%;
+                @media all and (max-width:450px){
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+

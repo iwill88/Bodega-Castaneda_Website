@@ -1,0 +1,36 @@
+@import '../general/variables';
+/*boton -general*/
+
+$boton-general:(
+    bg-boton: black,
+    font-family:$font-esteban,
+    text-decoration: dashed,
+    color:white,
+    radius: 10px,
+    padding:7px,
+    border:2px,
+    margin:3px 110px,
+    font-size: 1.5em,
+    );
+
+/*boton -contacto*/
+
+$boton-contacto:(
+    bg-boton: rgb(83, 8, 8),
+    text-decoration: none,
+    color:white,
+    width: 500px,
+    height: 30px,
+    radius: 3px,
+    border: none,
+    );
+
+/*boton -finalizar*/
+
+$boton-finalizar:(
+    text-decoration: none,
+    background-color: rgb(85, 0, 67),
+    font-size: 25px,
+    color:white,
+    text-align: center,
+    );

@@ -1,0 +1,65 @@
+
+@import '../general/variables';
+@import '../general/mapas';
+@import '../general/extends';
+
+
+
+/*--------------------CSS de header------------------------*/
+
+/*-----CSS del navegador principal dentro del header------*/
+
+header {
+    grid-area: contenedor-encabezado;
+    font-family: $font-esteban;
+    width: 100%;
+    background-color: $dark;
+    position: sticky;
+    top:0;
+    z-index: 2; /*Esto nos sirve para para que el header tenga prioridad sobre las demas capas*/
+    nav{ 
+        div{
+                .navegador-principal__logo{
+                    img{
+                        width: auto;
+                        height: 150px;
+                        animation: fadeIn 1s ;
+                    }
+                }
+                .navegador-principal__lista-uno{
+                    @extend %nav-listas;
+                }
+                .navegador-principal__lista-dos{
+                    @extend %nav-listas;
+                    div{
+                        a{
+                            .navegador-principal__carrito{
+                                color:$gray;
+                                font-size: 30px;
+                                &:hover{
+                                    transition: 0.5s;
+                                    color:$white;
+                                    transform:scale(1.20,1.20);
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+        }
+       
+    }
+}
+        
+       
+ 
+
+
+
+
+
+
+
+
+
+

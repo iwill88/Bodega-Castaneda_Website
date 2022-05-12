@@ -1,0 +1,30 @@
+@import '../general/variables';
+@import '../general/extends';
+@import '../general/mapas';
+
+html {
+    width:100%;
+    font-family: $font-esteban;
+}
+
+
+/*-----------------------CSS grid layout-------------------*/
+body{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    grid-template-areas:
+                                                            /*------SE HA APLICADO GRID-TEMPLATE-AREA------------*/
+        "contenedor-encabezado"
+        "contenedor-main"
+        "contenedor-footer";
+}
+
+h1,h2,h3 {
+    font-family: $font-esteban;
+}
+
+p, li, a {
+    font-family: $font-esteban;
+}
+
