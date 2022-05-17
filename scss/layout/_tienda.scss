@@ -11,11 +11,10 @@
         background-attachment: fixed;
         background-repeat: no-repeat;
         @extend %extend-primera-seccion;
+        @include display-primera-seccion(flex,center,center);
         h1{
-            color:$white-special;
+            @extend %titulo-seccion-uno;
             font-size: 80px;
-            font-family: $font-esteban;
-            text-shadow: $dark 5px 2px;
             animation: fadeIntwo 0.75s;
             @media all and (max-width:450px) {
                 font-size: 55px;
@@ -37,17 +36,17 @@
             padding-top: 20px;
             padding-bottom: 20px;
             @media all and (max-width:450px) {
-                font-size: 34;
+                font-size: 34px;
                 
         }
         }
         .contenedor-productos{
             font-family: $font-esteban;
             padding-bottom: 20px;
-            display:flex;
-            justify-content:space-around;
+            @include display-contenedores(flex,space-around);
             .producto{
                 @extend %extend-producto;
+                @include display-producto(flex,column,center);
                 div{
                     img{
                         padding-top:20px;

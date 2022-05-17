@@ -1,4 +1,4 @@
-@import '../general/extends';
+
 /*-------------------------CARRITO---------------------------*/
 
 .main-carrito{
@@ -8,9 +8,7 @@
     .primera-seccion--carrito{
         background-color:$dark;
         width: 100%;
-        display:flex;
-        align-items:center; 
-        justify-content:center;
+        @include display-primera-seccion(flex,center,center);
         border:1px solid $white;
         h1{
             color:$white;
@@ -68,6 +66,8 @@
             }
             div{
                 @extend %carrito-borde;
+                
+                
             }
             .espacio{
                 grid-area: espacio;

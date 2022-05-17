@@ -6,17 +6,16 @@
     background-color: $dark;
     /*Primera seccion*/
     .primera-seccion--turismo{
-        background: $black-bg-gradient, url(../Imagenes/Imagen_turismo1.jpeg);
+        background: $black-bg-gradient, url(../Imagenes/Imagen_turismo1.webp);
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
         background-repeat: no-repeat;
         @extend %extend-primera-seccion;
+        @include display-primera-seccion(flex,center,center);
         h1{
-            color:$white-special;
+            @extend %titulo-seccion-uno;
             font-size: 80px;
-            text-shadow: black 5px 2px;
-            text-align: center;
             animation: fadeIntwo 0.75s;
             @media all and (max-width:450px) {
                  font-size: 55px;

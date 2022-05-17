@@ -1,0 +1,25 @@
+/*mixin-producto*/
+
+@mixin display-producto($display,$direction,$justify){
+    display:$display;
+    flex-direction:$direction;
+    justify-content:$justify;
+}
+
+/*mixin-contenedores*/
+
+@mixin display-contenedores($display,$justify){
+    display:$display;
+    justify-content:$justify;
+}
+
+/*mixin-contenedores*/
+
+@mixin display-primera-seccion($display,$align,$justify){
+    display:$display;
+    align-items: $align;
+    justify-content:$justify;
+}
+
+
+

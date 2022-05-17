@@ -12,10 +12,10 @@
         height:80vh;
         width: 100%;
         @extend %extend-primera-seccion;
+        @include display-primera-seccion(flex,center,center);
         h1{
-            color:$white-special;
+            @extend %titulo-seccion-uno;
             font-size: 80px;
-            text-shadow: $dark 5px 2px;
             animation: fadeIntwo 0.75s;
             @media all and (max-width:450px) {
                 font-size: 55px;

@@ -9,13 +9,6 @@
   box-sizing: border-box;
 }
 
-ul[role=list] {
-  list-style: none;
-}
-ul[role=list] li a {
-  text-decoration: none;
-}
-
 /*base*/
 /* Colores*/
 /* Fonts */
@@ -55,14 +48,13 @@ header nav div .navegador-principal__lista-dos, header nav div .navegador-princi
 .main-contacto .primera-seccion--contacto, .main-turismo .primera-seccion--turismo, .main-tienda .primera-seccion--tienda, .main-nosotros .primera-seccion--nosotros, .main-index .primera-seccion {
   height: 80vh;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /*titulo-primera-seccion*/
-.main-nosotros .primera-seccion--nosotros h1, .main-index .primera-seccion h1 {
-  padding: 0px 15px;
+.main-contacto .primera-seccion--contacto h1, .main-turismo .primera-seccion--turismo h1, .main-tienda .primera-seccion--tienda h1, .main-nosotros .primera-seccion--nosotros p, .main-nosotros .primera-seccion--nosotros h1, .main-index .primera-seccion h1 {
+  color: rgb(238, 236, 236);
+  text-align: center;
+  text-shadow: black 5px 2px;
 }
 
 /*layout producto*/
@@ -73,9 +65,6 @@ header nav div .navegador-principal__lista-dos, header nav div .navegador-princi
   background-color: white;
   border-radius: 12px;
   margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 /*imagen-nosotros*/
@@ -212,14 +201,13 @@ header nav div .navegador-principal__lista-dos, header nav div .navegador-princi
 .main-contacto .primera-seccion--contacto, .main-turismo .primera-seccion--turismo, .main-tienda .primera-seccion--tienda, .main-nosotros .primera-seccion--nosotros, .main-index .primera-seccion {
   height: 80vh;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /*titulo-primera-seccion*/
-.main-nosotros .primera-seccion--nosotros h1, .main-index .primera-seccion h1 {
-  padding: 0px 15px;
+.main-contacto .primera-seccion--contacto h1, .main-turismo .primera-seccion--turismo h1, .main-tienda .primera-seccion--tienda h1, .main-nosotros .primera-seccion--nosotros p, .main-nosotros .primera-seccion--nosotros h1, .main-index .primera-seccion h1 {
+  color: rgb(238, 236, 236);
+  text-align: center;
+  text-shadow: black 5px 2px;
 }
 
 /*layout producto*/
@@ -230,9 +218,6 @@ header nav div .navegador-principal__lista-dos, header nav div .navegador-princi
   background-color: white;
   border-radius: 12px;
   margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 /*imagen-nosotros*/
@@ -249,6 +234,9 @@ header nav div .navegador-principal__lista-dos, header nav div .navegador-princi
   align-items: center;
 }
 
+/*mixin-producto*/
+/*mixin-contenedores*/
+/*mixin-contenedores*/
 /*--------------------CSS de header------------------------*/
 /*-----CSS del navegador principal dentro del header------*/
 header {
@@ -291,12 +279,13 @@ header nav div .navegador-principal__lista-dos div a .navegador-principal__carri
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .main-index .primera-seccion h1 {
-  color: rgb(238, 236, 236);
-  font-size: 60px;
-  text-align: right;
-  text-shadow: black 5px 2px;
+  font-size: 80px;
   animation: fadeIntwo 0.75s;
 }
 @media all and (max-width: 450px) {
@@ -306,7 +295,24 @@ header nav div .navegador-principal__lista-dos div a .navegador-principal__carri
 }
 @media all and (min-width: 451px) and (max-width: 820px) {
   .main-index .primera-seccion h1 {
-    font-size: 50px;
+    font-size: 60px;
+  }
+}
+.main-index .primera-seccion p {
+  color: rgb(238, 236, 236);
+  font-size: 50px;
+  text-align: center;
+  text-shadow: black 5px 2px;
+  animation: fadeIntwo 0.75s;
+}
+@media all and (max-width: 450px) {
+  .main-index .primera-seccion p {
+    font-size: 25px;
+  }
+}
+@media all and (min-width: 451px) and (max-width: 820px) {
+  .main-index .primera-seccion p {
+    font-size: 40px;
   }
 }
 .main-index .segunda-seccion {
@@ -414,6 +420,11 @@ header nav div .navegador-principal__lista-dos div a .navegador-principal__carri
   padding-bottom: 20px;
   display: flex;
   justify-content: space-around;
+}
+.main-index .cuarta-seccion .contenedor-productos .producto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .main-index .cuarta-seccion .contenedor-productos .producto div img {
   padding-top: 20px;
@@ -719,14 +730,13 @@ header nav div .navegador-principal__lista-uno, header nav div .navegador-princi
 .main-contacto .primera-seccion--contacto, .main-turismo .primera-seccion--turismo, .main-tienda .primera-seccion--tienda, .main-nosotros .primera-seccion--nosotros, .main-index .primera-seccion {
   height: 80vh;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /*titulo-primera-seccion*/
-.main-nosotros .primera-seccion--nosotros h1, .main-index .primera-seccion h1 {
-  padding: 0px 15px;
+.main-contacto .primera-seccion--contacto h1, .main-turismo .primera-seccion--turismo h1, .main-tienda .primera-seccion--tienda h1, .main-nosotros .primera-seccion--nosotros p, .main-nosotros .primera-seccion--nosotros h1, .main-index .primera-seccion h1 {
+  color: rgb(238, 236, 236);
+  text-align: center;
+  text-shadow: black 5px 2px;
 }
 
 /*layout producto*/
@@ -737,9 +747,6 @@ header nav div .navegador-principal__lista-uno, header nav div .navegador-princi
   background-color: white;
   border-radius: 12px;
   margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 /*imagen-nosotros*/
@@ -769,12 +776,13 @@ header nav div .navegador-principal__lista-uno, header nav div .navegador-princi
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .main-nosotros .primera-seccion--nosotros h1 {
-  color: rgb(238, 236, 236);
-  font-size: 60px;
-  text-align: right;
-  text-shadow: black 5px 2px;
+  font-size: 80px;
   animation: fadeIntwo 0.75s;
 }
 @media all and (max-width: 450px) {
@@ -784,7 +792,24 @@ header nav div .navegador-principal__lista-uno, header nav div .navegador-princi
 }
 @media all and (min-width: 451px) and (max-width: 820px) {
   .main-nosotros .primera-seccion--nosotros h1 {
-    font-size: 50px;
+    font-size: 60px;
+  }
+}
+.main-nosotros .primera-seccion--nosotros p {
+  color: rgb(238, 236, 236);
+  font-size: 50px;
+  text-align: center;
+  text-shadow: black 5px 2px;
+  animation: fadeIntwo 0.75s;
+}
+@media all and (max-width: 450px) {
+  .main-nosotros .primera-seccion--nosotros p {
+    font-size: 25px;
+  }
+}
+@media all and (min-width: 451px) and (max-width: 820px) {
+  .main-nosotros .primera-seccion--nosotros p {
+    font-size: 40px;
   }
 }
 .main-nosotros .segunda-seccion--nosotros {
@@ -849,12 +874,12 @@ header nav div .navegador-principal__lista-uno, header nav div .navegador-princi
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .main-tienda .primera-seccion--tienda h1 {
-  color: rgb(238, 236, 236);
   font-size: 80px;
-  font-family: "Esteban", serif;
-  text-shadow: black 5px 2px;
   animation: fadeIntwo 0.75s;
 }
 @media all and (max-width: 450px) {
@@ -881,7 +906,7 @@ header nav div .navegador-principal__lista-uno, header nav div .navegador-princi
 }
 @media all and (max-width: 450px) {
   .main-tienda .seccion-productos h2 {
-    font-size: 34;
+    font-size: 34px;
   }
 }
 .main-tienda .seccion-productos .contenedor-productos {
@@ -889,6 +914,11 @@ header nav div .navegador-principal__lista-uno, header nav div .navegador-princi
   padding-bottom: 20px;
   display: flex;
   justify-content: space-around;
+}
+.main-tienda .seccion-productos .contenedor-productos .producto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .main-tienda .seccion-productos .contenedor-productos .producto div img {
   padding-top: 20px;
@@ -944,17 +974,17 @@ header nav div .navegador-principal__lista-uno, header nav div .navegador-princi
   /*Tercera seccion*/
 }
 .main-turismo .primera-seccion--turismo {
-  background: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.295)), url(../Imagenes/Imagen_turismo1.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.295)), url(../Imagenes/Imagen_turismo1.webp);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .main-turismo .primera-seccion--turismo h1 {
-  color: rgb(238, 236, 236);
   font-size: 80px;
-  text-shadow: black 5px 2px;
-  text-align: center;
   animation: fadeIntwo 0.75s;
 }
 @media all and (max-width: 450px) {
@@ -1119,11 +1149,12 @@ header nav div .navegador-principal__lista-uno, header nav div .navegador-princi
   background-repeat: no-repeat;
   height: 80vh;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .main-contacto .primera-seccion--contacto h1 {
-  color: rgb(238, 236, 236);
   font-size: 80px;
-  text-shadow: black 5px 2px;
   animation: fadeIntwo 0.75s;
 }
 @media all and (max-width: 450px) {
@@ -1263,54 +1294,6 @@ header nav div .navegador-principal__lista-uno, header nav div .navegador-princi
   .main-contacto .tercera-seccion--contacto .formulario div div .formulario-mensaje div .boton-enviar {
     width: 350px;
   }
-}
-
-/*nav-listas*/
-header nav div .navegador-principal__lista-uno, header nav div .navegador-principal__lista-dos {
-  color: white;
-  font-size: 1.25rem;
-  animation: fadeIn 1s;
-}
-
-/*primera seccion*/
-.main-index .primera-seccion, .main-nosotros .primera-seccion--nosotros, .main-tienda .primera-seccion--tienda, .main-turismo .primera-seccion--turismo, .main-contacto .primera-seccion--contacto {
-  height: 80vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/*titulo-primera-seccion*/
-.main-index .primera-seccion h1, .main-nosotros .primera-seccion--nosotros h1 {
-  padding: 0px 15px;
-}
-
-/*layout producto*/
-.main-index .cuarta-seccion .contenedor-productos .producto, .main-tienda .seccion-productos .contenedor-productos .producto {
-  height: 490px;
-  width: 315px;
-  text-align: center;
-  background-color: white;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/*imagen-nosotros*/
-.main-nosotros .segunda-seccion--nosotros .contenedor-historia .izquierda, .main-nosotros .segunda-seccion--nosotros .contenedor-historia .derecha {
-  width: 36%;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-/*carrito borde*/
-.main-carrito .segunda-seccion--carrito .contenedor-carrito div {
-  border: 1px solid gray;
-  display: flex;
-  align-items: center;
 }
 
 /*-------------------------CARRITO---------------------------*/
