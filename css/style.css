@@ -433,7 +433,7 @@ header nav div .navegador-principal__lista-dos div a .navegador-principal__carri
 }
 .main-index .cuarta-seccion .contenedor-productos .producto div img:hover {
   transition: 1s;
-  transform: scale(1.05, 1.05);
+  transform: scale(1.03, 1.03);
 }
 .main-index .cuarta-seccion .contenedor-productos .producto div h3 {
   font-style: italic;
@@ -927,7 +927,7 @@ header nav div .navegador-principal__lista-uno, header nav div .navegador-princi
 }
 .main-tienda .seccion-productos .contenedor-productos .producto div img:hover {
   transition: 1s;
-  transform: scale(1.05, 1.05);
+  transform: scale(1.03, 1.03);
 }
 .main-tienda .seccion-productos .contenedor-productos .producto div h3 {
   font-style: italic;
