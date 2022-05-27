@@ -465,7 +465,7 @@ header nav div .navegador-principal__lista-dos div a .navegador-principal__carri
     align-items: center;
   }
 }
-@media all and (min-width: 451px) and (max-width: 820px) {
+@media all and (min-width: 451px) and (max-width: 1288px) {
   .main-index .cuarta-seccion .contenedor-productos {
     flex-wrap: wrap;
   }
@@ -959,7 +959,7 @@ header nav div .navegador-principal__lista-uno, header nav div .navegador-princi
     align-items: center;
   }
 }
-@media all and (min-width: 451px) and (max-width: 820px) {
+@media all and (min-width: 451px) and (max-width: 1288px) {
   .main-tienda .seccion-productos .contenedor-productos {
     flex-wrap: wrap;
   }
