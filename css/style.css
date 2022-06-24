@@ -1402,6 +1402,10 @@ header nav div .navegador-principal__lista-uno, header nav div .navegador-princi
     color: black;
   }
 }
+.main-carrito .segunda-seccion--carrito .contenedor-carrito .precio-titulo p {
+  position: relative;
+  top: 7px;
+}
 .main-carrito .segunda-seccion--carrito .contenedor-carrito .cantidad-titulo {
   grid-area: cantidad-titulo;
   padding-left: 10px;
@@ -1420,6 +1424,10 @@ header nav div .navegador-principal__lista-uno, header nav div .navegador-princi
     color: black;
   }
 }
+.main-carrito .segunda-seccion--carrito .contenedor-carrito .cantidad-titulo p {
+  position: relative;
+  top: 7px;
+}
 .main-carrito .segunda-seccion--carrito .contenedor-carrito .subtotal-titulo {
   grid-area: subtotal-titulo;
   padding-left: 10px;
@@ -1437,6 +1445,10 @@ header nav div .navegador-principal__lista-uno, header nav div .navegador-princi
     background-color: rgb(231, 228, 228);
     color: black;
   }
+}
+.main-carrito .segunda-seccion--carrito .contenedor-carrito .subtotal-titulo p {
+  position: relative;
+  top: 7px;
 }
 .main-carrito .segunda-seccion--carrito .contenedor-carrito .cancelar {
   grid-area: cancelar;
@@ -1488,6 +1500,8 @@ header nav div .navegador-principal__lista-uno, header nav div .navegador-princi
 .main-carrito .segunda-seccion--carrito .contenedor-carrito .cantidad input {
   width: 90px;
   padding-left: 10px;
+  position: relative;
+  bottom: 7px;
 }
 .main-carrito .segunda-seccion--carrito .contenedor-carrito .subtotal {
   grid-area: subtotal;

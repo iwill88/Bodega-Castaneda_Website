@@ -88,24 +88,24 @@
         <!--Tercera sección-->
         <section class="tercera-seccion--contacto" data-aos="fade-up" data-aos-duration="2000" >
             <h2>O ENVÍANOS UN MENSAJE</h2>
-            <div class="formulario d-grid align-items-center">
+            <form action="/server/" method="post" class="formulario d-grid align-items-center">
                 <div class="container-fluid">
                     <div class="row">
                          <div class="col-lg-5 col-md-12 col-12 formulario-datos d-grid justify-content-center">
                              <div>
-                                 <input type="text" name="" id="" placeholder="Nombre">
+                                 <input type="text" name="name" id="name" placeholder="Nombre">
                              </div>
                              <div >
-                                 <input type="text" name="" id="" placeholder="Apellidos">
+                                 <input type="text" name="last-name" id="last-name" placeholder="Apellidos">
                              </div>
                              <div >
-                                 <input type="email" name="" id="" placeholder="Correo Electronico">
+                                 <input type="email" name="email" id="email" placeholder="Correo Electronico">
                              </div>
                          </div>
                         
                          <div class="col-lg-7 col-md-12 col-12 formulario-mensaje d-grid justify-content-center">
                              <div >
-                                 <textarea name="" id="" cols="50" row="10" placeholder="Escriba su mensaje"></textarea>
+                                 <textarea name="form-comentarios" id="form-comentarios" cols="50" row="10" placeholder="Escriba su mensaje"></textarea>
                              </div>
                              <div >
                                  <input class="boton-enviar" type="submit" value="Enviar">
@@ -115,7 +115,7 @@
              
                 
                  </div>
-            </div>
+            </form>
             
             
                 
