@@ -13,7 +13,7 @@ _A continuación parte de las herramientas y tecnologías utilizadas._
 [![Bootstrap Follow](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white&labelColor=101010)](#)
 </br>
 
-![MaquetadoBarberia](https://github.com/iwill88/Bodega-Castaneda_Website/blob/master/Imagenes/Bodega-Casta%C3%B1eda_Website.jpg)
+![Maquetado](https://github.com/iwill88/Bodega-Castaneda_Website/blob/master/Imagenes/Bodega-Casta%C3%B1eda_Website.jpg)
 
 ## Muchas gracias por tomarte el tiempo en revisar mi trabajo! 🎁
 
