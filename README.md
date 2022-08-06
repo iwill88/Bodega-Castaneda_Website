@@ -1,6 +1,6 @@
 # Bodega Castaneda - Maquetado
 
-_Sitio Web de la tienda ficticia Bodega Castañeda en Tacna-Perú, creado con HTML, CSS, Bootstrap y SASS. Sitio web para prueba de maquetado, desktop y mobile, responsive, 5 pages y animaciones.
+_Sitio Web de la tienda ficticia Bodega Castañeda en Tacna-Perú, creado con HTML, CSS, Bootstrap y SASS. Sitio web para prueba de maquetado, desktop y mobile, responsive, 5 pages y animaciones._
 
 ## ⚙️ Tecnologías utilizadas 🚀
 
